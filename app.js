@@ -16,7 +16,7 @@ mongoose.set("strictQuery", false);
 /* Lav ny Database */
 mongoose.connect("mongodb+srv://esbenchristensen:kode123@cluster0.2kru2r7.mongodb.net/itemsDB?retryWrites=true&w=majority");
 
-const defaultItems = [{ name: "Gør rent" }, { name: "Ryd op" }, { name: "Støvsug" }, { name: "Lav lektier" }, { name: "Vask tøj" }];
+const defaultItems = [];
 
 const itemsSchema = {
     name: String,
