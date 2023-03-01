@@ -33,14 +33,14 @@ const List = mongoose.model("List", listSchema);
 
 app.get("/", function (req, res) {
     Item.find({}, function (err, results) {
-        if (results.length === 0) {
+        /*         if (results.length === 0) {
             Item.insertMany(defaultItems, function (error) {});
             res.redirect("back");
             console.log("Result was 0 Default items inserted");
-        } else {
-            res.render("list", { listTitle: "Today", newListItems: results });
-            console.log("Result was not 0.");
-        }
+        } else { */
+        res.render("list", { listTitle: "Today", newListItems: results });
+        console.log("Result was not 0.");
+        /* } */
     });
 });
 
